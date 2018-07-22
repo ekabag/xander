@@ -1,2 +1,4 @@
 # xander
-Crowd sourced recommendation app
+Crowd sourced recommendation mobile app
+
+
