@@ -1,6 +1,6 @@
 # xandar
 
-A crowd sourced recommendation application
+A crowd sourced recommendation mobile application
 
 ## Getting Started
 
