@@ -1,6 +1,6 @@
 # xandar
 
-A new Flutter application.
+A crowd sourced recommendation application
 
 ## Getting Started
 
