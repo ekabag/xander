@@ -1,24 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:xandar/auth.dart';
-import 'package:xandar/login_screen.dart';
-import 'package:xandar/user_screen.dart';
+import 'package:xandar/xandar.dart';
 
+void main() => runApp(MyApp());
 
-/// The main entry point to the app.
-void main() async {
-  Auth firebaseAuth = new Auth();
-  Widget _defaultHome;
-
-  if (firebaseAuth.isUserSignedIn()) {
-   _defaultHome = new LoginScreen(auth: firebaseAuth);;
-  } else {
-    _defaultHome = new UserScreen(auth: firebaseAuth);
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Welcome to Flutter',
+      home: Xandar()
+    );
   }
-
-
-  runApp(new MaterialApp(
-    title: 'Xandar',
-    home: _defaultHome,
-  ));
-
 }
